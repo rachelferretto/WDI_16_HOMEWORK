@@ -1,0 +1,60 @@
+body {
+   background-image: url("images/stocks.jpg");
+   background-size: cover;
+   font-family: 'Inconsolata', monospace;
+   text-align: center;
+}
+h1 {
+    font-size: 50px;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-size: 30px;
+    font-style: italic;
+}
+nav {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+ul li {
+    display: inline-block; 
+    margin: 0 0 2vh 2vw; 
+}
+
+li {
+    font-size: 20px;
+
+}
+
+input {
+    padding: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+.opacity {
+    background-color: white;
+    opacity: 0.8;
+    padding: 15px 10px 20px 10px;
+    margin: 10vh 10vw 0 10vw;
+    border-radius: 3px;
+    position:relative;
+    
+    box-shadow:0 5px 8px rgb(255, 255, 255, 0.8), 0 0 40px rgb(255, 255, 255, 0.6);
+}
