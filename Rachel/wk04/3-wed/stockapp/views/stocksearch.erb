@@ -15,7 +15,13 @@
           <li><a href='/about'> About </a> </li>
         </ul>
       </nav>
-    <h1> <%= params["stockcode"] %> price: USD $<%= @price %> </h1>
-    </div>
+    <h1><% if @price %> 
+        <%= params["stockcode"] %> price: USD $<%= @price.latest_price %> 
+        <% else %>
+        <div> "Stock does not exist"</div>
+        <% end %>
+    </h1>
+
+
   </body>
 </html>
