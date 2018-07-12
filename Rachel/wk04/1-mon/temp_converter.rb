@@ -11,21 +11,30 @@ def convert_temp(temp,unit)
     if unit == "F"
         puts("fahrenheit: #{temp}")
         temp = (temp - 32) / 1.8
-        puts("#{unit} + to celcius: + #{temp}")
+        puts("#{unit} to celcius: #{temp}")
         temp = (temp + 459.67) / 1.8
-        puts("#{unit} + to kelvin: + #{temp}")
+        puts("#{unit} to kelvin: #{temp}")
       elsif unit == "C"
+        puts("celcius: #{temp}")
         temp = (temp × 1.8) + 32
-        puts("#{unit} + to fahrenheit: + #{temp}")
+        puts("#{unit} to fahrenheit: #{temp}")
         temp = temp + 273.15
-        puts("#{unit} + to kelvin: + #{temp}")
+        puts("#{unit} to kelvin: #{temp}")
       elsif unit == "K"
-        temp - 273.15
-        puts("#{unit} + to celcius: + #{temp}")
-        (temp × 1.8) - 459.67 
-        puts("#{unit} + to fahrenheit: + #{temp}")     
+        puts("kelvin: #{temp}")
+        temp =  temp - 273.15
+        puts("#{unit} to celcius: #{temp}")
+        temp = (temp × 1.8) - 459.67 
+        puts("#{unit} to fahrenheit: #{temp}")  
+      else
+        puts("Invalid unit")  
     end
 end
 
-
 puts convert_temp(temp,unit)
+
+# loop do 
+#     convert_temp(temp,unit)
+#  if unit == 'q'
+#     break
+# end
