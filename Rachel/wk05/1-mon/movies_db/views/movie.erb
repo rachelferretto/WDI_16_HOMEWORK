@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movies Database</title>
+  <link rel='stylesheet' href='/stylesheets/main.css'>
+  <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+</head>
+<body>
+  <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    <h1>Movies Database</h1>
+    <h2><%= @result['Title'] %></h2>
+    
+    <aside>
+    <img src="<%= @result['Poster'] %>">
+    </aside>
+    
+    
+    <p>
+    Movie Plot: <br>
+    <%= @result['Plot'] %>
+    </p>
+    <div> MOVIE DETAILS: <br>
+      Director: <%= @result['Director'] %> <br>
+      Actors: <%= @result['Actors'] %> <br>
+      Year released: <%= @result['Year'] %> <br>
+      Rated: <%= @result['Rated'] %>
+    </div>
+  
+
+
+</body>
+</html>
