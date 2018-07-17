@@ -1,0 +1,77 @@
+body {
+    font-family: 'Gaegu', cursive;
+    text-align: center;
+    background: url("/cinema.jpg") no-repeat center center fixed;
+    background-size: cover;
+    
+}
+ul {
+    background-color: #e3e5e4;
+    text-align: left;
+}
+
+ul li {
+    display: inline;
+    font-size: 25px;
+    color: white;
+    padding: 10px; 
+}
+
+input {
+    font-family: 'Gaegu', cursive;
+    font-size: 30px;
+    background-color: beige;
+    border-radius: 5px;
+    margin: 3vh;
+}
+
+button {
+    font-family: 'Gaegu', cursive;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    margin: 3vh;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 35px;
+    background-color: #353736;
+    color: #e3e5e4;
+    padding: 20px;
+    border-radius: 6px;
+    margin-right: 5vw;
+    margin-left: 5vw;
+
+}
+
+img {
+    border-radius:  10px;
+    border: 6px solid #353736;
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: justify;
+    color: rgb(58, 123, 175);
+    font-size: 20px;
+    margin: 0 10vw 0 10vw;
+    padding: 40px;
+    background-color: #e3e5e4;
+    border-radius: 5px;
+}
+
+div {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+    background-color: #353736;
+    color: #e3e5e4;
+    border-radius: 5px;
+    margin: 0 10vw 0 10vw;
+    margin-top: 5vh;
+}
