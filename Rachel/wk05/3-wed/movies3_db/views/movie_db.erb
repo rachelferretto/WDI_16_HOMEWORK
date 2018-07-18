@@ -1,0 +1,27 @@
+</head>
+<body>
+  <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    <h1>Movies Database</h1>
+    <h2><%= @movie_found['title'] %></h2>
+    
+    <aside>
+    <img src="<%= @movie_found['image_url'] %>">
+    </aside>
+    
+    <div class='movie details'>
+      
+      <div> MOVIE DETAILS: <br>
+        Actors: <%= @movie_found['actors'] %> <br>
+        Year released: <%= @movie_found['year_released'] %> <br>
+    
+      </div> 
+    </div>
+
+
+</body>
+</html>
