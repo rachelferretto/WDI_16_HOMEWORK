@@ -1,0 +1,7 @@
+ul li {
+    display: inline;
+}
+
+.thumbnail {
+    max-width: 10%;
+}

@@ -1,0 +1,10 @@
+<h1><%= @planet.name %></h1>
+
+<div><img src="<%= @planet.img_url %>"</div>
+
+<form action ="/planets/<%= @planet['id'] %>" method= "post"> 
+<input type="hidden" name="_method" value = "delete">
+<button>
+Destroy this Planet
+</button>
+</form>
