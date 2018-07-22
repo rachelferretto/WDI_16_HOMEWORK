@@ -43,9 +43,9 @@ get '/list' do
   title = params["s"]
   search = HTTParty.get("http://omdbapi.com/?s=#{title}&apikey=2f6435d9")
   @results = search.parsed_response['Search']
-  
   erb :list
 end
+
 
 
 
