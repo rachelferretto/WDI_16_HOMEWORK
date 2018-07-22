@@ -3,8 +3,38 @@
 <div><img src="<%= @planet.img_url %>"</div>
 
 <form action ="/planets/<%= @planet['id'] %>" method= "post"> 
-<input type="hidden" name="_method" value = "delete">
-<button>
-Destroy this Planet
-</button>
+    <input type="hidden" name="_method" value = "delete">
+    <button>
+    Destroy this Planet
+    </button>
 </form>
+
+<form action="/planets/<%= @planet['id']%>/edit" method= "put">
+    <input type="hidden" name="_method" value="<%= @planet['id']%>" >
+    <button> Take over planet and change its name! </button>
+
+</form>
+
+<div class ='details'>
+<p> PLANET DETAILS: </p>
+
+</div>
+
+
+
+<form action="/comments" method= "post">
+<input type="hidden" name="planet_id" value="<%= @planet['id'] %>">
+    <label for=""> Leave a comment </label>
+    <textarea name="content"></textarea>
+    <button> Post </button>
+</form>
+
+
+<p> COMMENTS: </p>
+<% @comments.each do |comment| %>
+<p><%= comment['content']  %>
+    <%= comment['comment_time']%>
+</p>
+<% end %>
+
+

@@ -2,15 +2,11 @@
 require 'pry'
 require_relative 'db_config'
 require_relative 'models/planet'
+require_relative 'models/detail'
+require_relative 'models/comment'
+require_relative 'models/user'
+
 
 binding.pry
 
-
-#examples using active record (rails extension)
-#Dish.find(2) - returns object with id of 2
-#Dish.count - number of dishes in hash
-
-#create/update a dish
-#D1 = Dish.new - to add name Dish.name = "pizza"
-#then to save to db: d1.save - and it assigns id automatically
 

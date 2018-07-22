@@ -7,10 +7,23 @@
 </head>
 <body>
   <header>
+    <h1>Universe Boss</h1>
     <ul>
-    <li><a href="/">Home</a></li>
+      <li><a href="/">Home</a></li>
   </header>
+  
+  <main>
+    <% if logged_in? %>
 
+    Logged in as <%= current_user.email %>
+    <form action="/session" method="post">
+      <input type="hidden" name= "_method" value = "delete">
+      <button>Logout </button>
+
+    </form>
+   
+    <%end%>
+</main>
   <%= yield %>
 
 </body>

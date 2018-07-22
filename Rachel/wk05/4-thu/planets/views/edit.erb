@@ -1,0 +1,11 @@
+<h1> Takeover planet</h1>
+
+
+<form action='/planets/<%= @planet['id'] %>' method="post"> 
+    <input type = "hidden" name="_method" value="put">
+    <label for=""> New name of planet:</label>
+    <input type = "text" name="name" value="<% @planet['name'] %>">
+    <label for=""> image URL</label>
+    <input type = "text" name="img_url" value="<% @planet['img_url'] %>">
+    <button> Update </button>
+</form>
