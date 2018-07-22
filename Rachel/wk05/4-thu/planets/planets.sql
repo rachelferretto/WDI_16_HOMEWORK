@@ -17,14 +17,13 @@ CREATE TABLE details (
     id SERIAL4 PRIMARY KEY,
     planet_id INTEGER NOT NULL,
     radius VARCHAR(20),
-    obital_speed VARCHAR(100),
+    orbital_speed VARCHAR(100),
     dist_from_sun VARCHAR(100),
     FOREIGN KEY (planet_id) REFERENCES planets (id) ON DELETE RESTRICT
 );
 
 
-INSERT INTO details (radius, orbital_speed, dist_from_sun) values ('', '', '', '');
-
+INSERT INTO details (planet_id, radius, orbital_speed, dist_from_sun) values ('1','2439.7km','47.362 km per s','57.91 million km');
 
 
 
@@ -43,4 +42,3 @@ CREATE TABLE comments (
     FOREIGN KEY (planet_id) REFERENCES planets (id) ON DELETE RESTRICT 
 );
 
-INSERT INTO comments (content, comment_time, planet_id) values ('cool',  1);

@@ -9,13 +9,16 @@
 
 
 
+<div class= "wrapper">
+    <div class="planets">
 
+    <% @planets.each do |planet| %>
 
-<% @planets.each do |planet| %>
-
-    <p><a href="/planets/<%= planet.id %>">
-            <%= planet.name %> 
-        </a>
-    </p>
-    <img class ="thumbnail" src="<%= planet.img_url %>">
-<% end %>
+        <a href="/planets/<%= planet.id %>">
+            <%= planet.name %> <br>
+        <img class ="thumbnail" src="<%= planet.img_url %>">
+        <br>
+    <% end %>
+    </div>
+    
+</div>

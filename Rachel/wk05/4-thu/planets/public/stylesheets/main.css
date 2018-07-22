@@ -1,7 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poor Story', cursive;
+    text-align: center;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+ul {
+    text-align: left;
+}
+
 ul li {
     display: inline;
 }
+ ul li:first-child {
+     border-right: solid black 1px;
+     padding: 5px;
+ }
+
+.wrapper {
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.planets {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+
+}
+.planets a {
+    height: 70%;
+    width: 30%;
+}
 
 .thumbnail {
-    max-width: 10%;
+    max-height:60%;
+    max-width: 60%; 
+}
+
+
+a {
+    display: inline;
+    text-decoration: none;
+}
+
+.details {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5vh 20vw 5vh 20vw;
+    font-size: 20px;
+    text-align: left;
+}
+
+.comments {
+    text-align: left;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
 }

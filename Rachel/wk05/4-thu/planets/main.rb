@@ -28,6 +28,9 @@ get '/' do
   erb :index
 end
 
+get '/about' do
+  erb :about
+end
 
 get '/planets/new' do
   erb :new
@@ -37,6 +40,7 @@ end
 get '/planets/:id' do
   @planet = Planet.find(params[:id])
   @comments = @planet.comments
+  @details = @planet.details
 
   erb :planet
 end
@@ -79,7 +83,12 @@ post '/comments' do
   redirect "/planets/#{params[:planet_id] }"
 end
 
+delete '/comment/:id' do
+  comment = Comment.find( params[:id] )
+  comment.destroy
 
+  redirect "/planets/#{ params[:id] }"
+end
 
 #login
 
