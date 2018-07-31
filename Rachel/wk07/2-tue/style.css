@@ -1,0 +1,25 @@
+body {
+    font-family: 'Kirang Haerang', cursive;
+    font-size: 18px;
+    word-wrap:break-word;
+}
+
+input {
+    font-family: 'Kirang Haerang', cursive;
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Kirang Haerang', cursive;
+    font-size: 20px;
+}
+
+
+h1 {
+    font-size: 60px;
+}
+
