@@ -1,5 +1,6 @@
 $(document).ready(function() {
     console.log('search for a giphy');
+    var offset = 0;
 
     const onSuccess = (res) => {
         var gif = document.querySelector('.search-result')
@@ -10,26 +11,27 @@ $(document).ready(function() {
         }
     }
 
-    function getAjax() {
+    function getResults() {
         var query = document.getElementById("search-text").value
-
         $.ajax({
             method: 'get',
-            url: "http://api.giphy.com/v1/gifs/search?q=" + query + "&api_key=k9mr6XS5bWv8chZJT1EhPGoLeYCLRuvX", 
+            url: "http://api.giphy.com/v1/gifs/search?q=" + query + "&api_key=k9mr6XS5bWv8chZJT1EhPGoLeYCLRuvX&offset=" + offset, 
             dataType: 'json'
         }).done(onSuccess) 
     }
 
+
     $(".search").on('click', function() {
         event.preventDefault()
-        getAjax()
+        getResults()
     })
+
 
     $(window).scroll(function() {
         if($(window).scrollTop() == $(document).height() - $(window).height()) {
-            getAjax()
+            offset = offset + 11
+            getResults()
         }
-
     })
 })
 
