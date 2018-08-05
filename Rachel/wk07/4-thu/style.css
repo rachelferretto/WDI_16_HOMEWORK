@@ -9,7 +9,7 @@ margin: 0;
 background-color: black;
 color: white;
 text-align: center;
-font-family: 'MedievalSharp', cursive;
+font-family: 'Montserrat', sans-serif;
 }
 h1, 
 h2,
@@ -30,8 +30,16 @@ transition: 0.3s;
 padding: 10px;
 border-radius: 5px;
 padding: 10px;
+margin-left: 5px;
 display: inline;
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
 }
+button:hover {
+    background-color: grey;
+    font-size: 16px;
+}
+
 img {
 display: inline;
 position: relative;
@@ -43,8 +51,9 @@ transition: 0.3s;
 }
 
 img:hover {
-    opacity: 0.7;
+    opacity: 0.6;
 }
+
 a {
 text-decoration: none;
 display:none;
@@ -62,14 +71,22 @@ border-radius: 5px;
 .search-result {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
     text-align: center;
     margin: 5px;
+    border-top: 2px solid white;
+    white-space: nowrap;
+    padding: 3px;
+}
+form {
+    padding: 30px;
 }
 
 input {
     margin: 10px;
     display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: #bbb;
 }
 
 h1 {
@@ -88,23 +105,25 @@ p {
     font-size: 18px;
 }
 
-/* The Modal (background) */
+.giphy {
+    width: 19.4%;
+    display: inline-block;
+}
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     padding-top: 100px; 
-    left: 0;
+    left: 5%;
     top: 0;
     width: 90%; 
-    height: 90%; 
+    height: 80%; 
     overflow: auto; 
     background-color: rgba(0,0,0,0.9); 
     border-radius: 5px;
-    border-color: white 1px solid;
-
+    text-align: center;
 }
-
 
 .modal-image {
     margin: auto;
@@ -113,7 +132,6 @@ p {
     max-width: 700px;
 }
 
-/* Caption of Modal Image */
 #caption {
     margin: auto;
     display: block;
@@ -125,7 +143,6 @@ p {
     height: 150px;
 }
 
-/* Add Animation */
 .modal-content, #caption {    
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
@@ -142,7 +159,6 @@ p {
     from {transform:scale(0)} 
     to {transform:scale(1)}
 }
-
 
 .close {
     position: absolute;
@@ -162,7 +178,7 @@ p {
 }
 
 .hidden {
-    display: none;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
 }
-
 

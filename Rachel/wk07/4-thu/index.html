@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Giphy search</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
-    
-</head>
-<body>
-    <h1> Giphy search!</h1>
-    <h2> Find a giphy here:</h2>
-    <form> 
-        <input id="search-text" type="text" name "search" placeholder="search for a giphy"><button class="search">Search</button>
-    </form>
-    
-
-
-    <div class ="search-result">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Giphy search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        
+    </head>
+    <body>
+        <h1> Giphy search!</h1>
+        <h2> Find a giphy here:</h2>
+        <form> 
+            <input id="search-text" type="text" name "search" placeholder="search for a giphy">
+            <button class="search">Search</button> 
+            <button id="reset" class="hidden">Reset</button>
+        </form>
+        
         <p class='hidden'> click on a giphy to get the URL</p>
-    </div>
 
-    <!-- The Modal -->
-<div id="myModal" class="modal">
-        <p>copy the URL here:</p>
-        <span class="close">&times;</span>
-      </div>
-    
+        <div class ="search-result"></div>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script src="infinite.js"></script>
-</body>
+
+        <div id="myModal" class="modal">
+            <p>copy the URL here:</p>
+            <span class="close">&times;</span>
+        </div>
+        
+
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="infinite.js"></script>
+    </body>
 </html>
