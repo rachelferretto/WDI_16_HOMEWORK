@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+input,
+button {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.brush {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: solid grey 1px;
+    display: inline-block;
+    vertical-align: middle; 
+}
+.canvas {
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+}
+
+.square {
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    border: solid grey .2px;
+    margin: 0;
+}
