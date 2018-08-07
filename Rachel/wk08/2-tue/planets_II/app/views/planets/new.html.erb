@@ -1,0 +1,14 @@
+
+<form action="/planets" method = "post">
+    <input type ="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"></input>
+    <input type="text" name="name" placeholder="enter planet name" value="<%= @planet.name%>"></input>
+    <input type="text" name="url" placeholder="paste planet image URL here" value="<%= @planet.url%>"> </input>
+    <button> Create </button>
+</form>
+
+
+
+
+<% @planet.errors.full_messages.each do |message|%>
+    <p><%= message%></p>
+<% end %>

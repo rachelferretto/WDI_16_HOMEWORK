@@ -1,0 +1,13 @@
+<h1><%= @planet.name %></h1>
+
+<form action="/planets/<%= @planet.id %>" method="post">
+<input type ="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" </input>
+<input type="hidden" name="_method" value="delete" id=""></input>
+<button> Delete </button>
+
+<input type="hidden" name="_method" value="edit"></input>
+<button>Edit</button>
+
+</form>
+
+
